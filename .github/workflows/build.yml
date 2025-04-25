@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [windows-latest]
+        os: [macos-latest]
         build_type: [Release]
         ui: [gui]
         scripting: [lua]
@@ -95,5 +95,6 @@ jobs:
       with:
         name: aseprite
         path: |
-          D:/a/aseprite/aseprite/build/bin/data
-          D:/a/aseprite/aseprite/build/bin/aseprite.exe
+          D:/a/aseprite/aseprite/build/bin
+          #D:/a/aseprite/aseprite/build/bin/data
+          #D:/a/aseprite/aseprite/build/bin/aseprite.exe
